@@ -22,17 +22,7 @@ friday_model_dict = {
         max_tokens_threshold=131072-32000-1000,
         enable_compression=True,
         temperature=0.1
-    ),
-    "qwen3_coder": LiteLlmWithSleep(
-    model="openai/qwen3-coder-480b-a35b-instruct",
-    api_base='https://api.toiotech.com/v1',
-    api_key='sk-nw5G71pE0RgR4ew85fdYUDWTYxdFma0M4aQoUTuxNrXNXFqP',
-    # max_completio[n_tokens=32000,
-    max_tokens_threshold=256_000-32000,
-    enable_compression=True,
-    temperature=0.1,
-    presence_penalty=1.2
-)
+    )
 }
 
 
