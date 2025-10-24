@@ -1,0 +1,19 @@
+# Core dependencies
+google-adk>=1.10.0
+litellm>=1.76.0
+fastapi>=0.119.0
+uvicorn>=0.38.0
+pydantic>=2.12.0
+
+# Google Cloud dependencies
+google-cloud-aiplatform>=1.122.0
+google-auth>=2.41.0
+google-api-python-client>=2.185.0
+
+# HTTP and async support
+httpx>=0.28.0
+aiohttp>=3.13.0
+
+# Other
+python-multipart
+pexpect
