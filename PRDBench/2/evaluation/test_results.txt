@@ -1,0 +1,538 @@
+Testing: 1.1.1 Main Menu Function Navigation: After program startup, the main menu is correctly displayed, and corresponding functional modules can be accessed via numeric options.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/1.1.1_main_menu_navigation.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+Error: File path does not exist: 
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6
+----------------------------------------
+Testing: 1.1.2 Input Validity Check: Strictly validates input for the main menu.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/1.1.2_input_validation.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+Invalid input, please try again.
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+================
+----------------------------------------
+Testing: 1.2.1 CSV Data Source Configuration: Supports users configuring local CSV file paths via the command line.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/1.2.1_csv_config.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.1.1 Multi-line SQL Input and Execution: Supports entry and combined execution of multi-line SQL statements.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.1.1_multiline_sql.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.1.2 Basic SQL Syntax Validation: Performs basic syntax validation on input SQL based on `sqlparse`.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.1.2_sql_validation.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.1.3 Query Interrupt Function: Supports users interrupting ongoing queries via Ctrl+C.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.1.3_long_sql.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.1.4a Query Failure Reason Prompt (Non-existent Field): Returns specific reason when a queried field does not exist.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.1.4a_invalid_field.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.1.4b Query Failure Reason Prompt (Data Source Not Configured): Returns specific reason when no data source is configured.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.1.4b_no_datasource.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+Error: Please load a CSV file first.
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+============
+----------------------------------------
+Testing: 2.1.5a History Query Recording and Display: Automatically saves the last 10 valid queries and supports viewing them.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.1.5a_history_view.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.1.5b History Query Reuse: Supports reusing historical queries by inputting their number.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.1.5b_history_reuse.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.2.1 Preset Market Cap Tier Screening: Based on query results, can screen according to preset market cap categories.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && PYTHONPATH=. pytest evaluation/tests/test_logic.py::test_market_cap_preset_filter
+Return code: 0
+Output: ============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.0.2, pluggy-1.6.0
+rootdir: /Users/yuzhengxu/projects/PRDBench/PRDBench/2
+plugins: anyio-4.12.1, langsmith-0.7.7, timeout-2.4.0, asyncio-1.3.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 1 item
+
+evaluation/tests/test_logic.py .                                         [100%]
+
+============
+Error: /Users/yuzhengxu/projects/OneManCompany/.venv/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+
+----------------------------------------
+Testing: 2.2.2 Custom Market Cap Range Screening: Supports users inputting custom market cap lower and upper limits for screening.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.2.2_custom_filter.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.2.3a Combined Logic Screening (AND Logic): Supports adding other dimensions for 'AND' logic screening based on market cap screening.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.2.3a_and_logic.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.2.3b Combined Logic Screening (OR Logic): Supports 'OR' logic screening between different dimensions.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.2.3b_or_logic.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.2.4a Result Pagination Display: Screening results can be displayed in pages, 10 items per page.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.2.4a_pagination.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.2.4b Result Sorting Function: Screening results support ascending or descending sorting by specified fields.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.2.4b_sorting.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.3.1 Target Metric Selection for Analysis: Allows user to select one numerical field from query results as the analysis target.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.3.1_metric_selection.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.3.2 Analysis Dimension Selection: Automatically extracts non-numerical fields as candidate dimensions and supports user selection.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.3.2_dimension_selection.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.3.3 Variance Decomposition Contribution Calculation and Display: Correctly calculates and outputs the contribution of each dimension and interaction effects to metric fluctuation.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && PYTHONPATH=. pytest evaluation/tests/test_logic.py::test_variance_decomposition
+Return code: 0
+Output: ============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.0.2, pluggy-1.6.0
+rootdir: /Users/yuzhengxu/projects/PRDBench/PRDBench/2
+plugins: anyio-4.12.1, langsmith-0.7.7, timeout-2.4.0, asyncio-1.3.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 1 item
+
+evaluation/tests/test_logic.py .                                         [100%]
+
+============
+Error: /Users/yuzhengxu/projects/OneManCompany/.venv/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+
+----------------------------------------
+Testing: 2.3.4 Core Dimension In-depth Analysis: Drills down into the dimension with the highest contribution, displaying sub-category statistical information.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && PYTHONPATH=. pytest evaluation/tests/test_logic.py::test_deep_dive_analysis
+Return code: 0
+Output: ============================= test session starts ==============================
+platform darwin -- Python 3.12.12, pytest-9.0.2, pluggy-1.6.0
+rootdir: /Users/yuzhengxu/projects/PRDBench/PRDBench/2
+plugins: anyio-4.12.1, langsmith-0.7.7, timeout-2.4.0, asyncio-1.3.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 1 item
+
+evaluation/tests/test_logic.py .                                         [100%]
+
+============
+Error: /Users/yuzhengxu/projects/OneManCompany/.venv/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.2.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+
+----------------------------------------
+Testing: 2.4.1 Textual Table Display of Results: Analysis results support display via formatted text tables.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.4.1_table_display.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+----------------------------------------
+Testing: 2.4.2a Report Saving Function: Supports saving analysis results as a TXT file.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.4.2a_report_generation.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+Error: /Users/yuzhengxu/projects/OneManCompany/.venv/lib/python3.12/site-packages/statsmodels/regression/linear_model.py:1717: RuntimeWarning: divide by zero encountered in scalar divide
+  return np.dot(wresid, wresid) / self.df_resid
+/Users/yuzhengxu/projects/OneManCompany/.venv/lib/python3.12/site-packages/statsmodels/stats/anova.py:142: RuntimeWarning: divide by zero encountered in scalar divide
+  (model.ssr / model.df_resid))
+
+----------------------------------------
+Testing: 2.4.2b Report Content Verification (Context): The report file must contain complete analysis context information.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.4.2b_report_context_validation.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+Error: /Users/yuzhengxu/projects/OneManCompany/.venv/lib/python3.12/site-packages/statsmodels/regression/linear_model.py:1717: RuntimeWarning: divide by zero encountered in scalar divide
+  return np.dot(wresid, wresid) / self.df_resid
+/Users/yuzhengxu/projects/OneManCompany/.venv/lib/python3.12/site-packages/statsmodels/stats/anova.py:142: RuntimeWarning: divide by zero encountered in scalar divide
+  (model.ssr / model.df_resid))
+
+----------------------------------------
+Testing: 2.4.2c Report Content Verification (Analysis Results): The report file must contain the complete analysis process and conclusions.
+Running: cd /Users/yuzhengxu/projects/PRDBench/PRDBench/2 && python src/main.py < evaluation/2.4.2c_report_analysis_validation.in
+Return code: 0
+Output: Welcome to the US Stock Quantitative Analysis Tool!
+
+========== US Stock Analysis Tool ==========
+[1] Enter CSV File Path
+[2] SQL Query
+[3] Screen Stocks
+[4] Analyze Metric Fluctuation
+[5] View History Queries
+[6] Exit
+=============================================
+Enter your choice:
+
+Enter CSV file path:
+CSV file loaded successfully!
+Loaded 16 rows, 8 columns.
+Columns: Ticker, CompanyName, Market Value, Industry, Exchange, Daily Return Volatility, Price-Earnings Ratio (PE), Region
+
+========== US
+Error: /Users/yuzhengxu/projects/OneManCompany/.venv/lib/python3.12/site-packages/statsmodels/regression/linear_model.py:1717: RuntimeWarning: divide by zero encountered in scalar divide
+  return np.dot(wresid, wresid) / self.df_resid
+/Users/yuzhengxu/projects/OneManCompany/.venv/lib/python3.12/site-packages/statsmodels/stats/anova.py:142: RuntimeWarning: divide by zero encountered in scalar divide
+  (model.ssr / model.df_resid))
+
+----------------------------------------

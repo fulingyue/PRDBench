@@ -1,0 +1,184 @@
+{
+  "summary": {
+    "total_tests": 24,
+    "passed_tests": 0,
+    "failed_tests": 24,
+    "total_score": 0,
+    "max_score": 48,
+    "pass_rate": 0.0,
+    "grade": "❌ 需重做 (F)"
+  },
+  "timestamp": "2026-03-23 14:59:59",
+  "project_id": 2,
+  "workspace_path": "/Users/yuzhengxu/projects/PRDBench/PRDBench",
+  "test_results": [
+    {
+      "metric": "1.1.1 Main Menu Function Navigation: After program startup, the main menu is correctly displayed, and corresponding functional modules can be accessed via numeric options.",
+      "description": "Start the program. Observe if a menu clearly displaying '[1] Enter CSV File Path', '[2] SQL Query', '[3] Screen Stocks', '[4] Analyze Metric Fluctuation', '[5] View History Queries', '[6] Exit' is sho...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 11\n  - output_lines_count: 14\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: \n用户输入: 2\n用户输入: \n用户输入: 3\n用户输入: \n用户输入: 4\n用户输入: \n用户输入: 5\n用户输入: \n用户输入: 6\n程序输出: Welcome to the US Stock Quantitative Analysis Tool!\r\n\r\n========== US Stock Analysis Tool ==========\r\n[1] Enter C...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "1.1.2 Input Validity Check: Strictly validates input for the main menu.",
+      "description": "On the main menu interface, input non-numeric characters (e.g., 'a') and out-of-range numbers (e.g., '0' or '7') sequentially. Observe if the program can catch the errors and provide clear Chinese pro...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 4\n  - output_lines_count: 6\n\n📝 程序输出日志:\n用户输入: a\n用户输入: 0\n用户输入: 7\n用户输入: 6\n程序输出: Welcome to the US Stock Quantitative Analysis Tool!\r\n\r\n========== US Stock Analysis Tool ==========\r\n[1] Enter CSV File Path\r\n[2] SQL Query\r\n[3] Screen Stocks\r\n[4] A...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "1.2.1 CSV Data Source Configuration: Supports users configuring local CSV file paths via the command line.",
+      "description": "1. Precondition Check (User Path): From the main menu, can the user clearly enter the 'Enter CSV File Path' function interface by inputting '[1]' and pressing Enter?\n2. Preparation: Prepare a real exi...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 5\n  - output_lines_count: 10\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 1\n用户输入: fake.csv\n程序输出: Welcome to the US Stock Quantitative Analysis Tool!\r\n\r\n========== US Stock Analysis Tool ==========\r\n[1] Enter CSV File Path\r...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.1.1 Multi-line SQL Input and Execution: Supports entry and combined execution of multi-line SQL statements.",
+      "description": "1. Precondition Check (User Path): From the main menu, can the user clearly enter the 'SQL Query' function interface by inputting '[2]' and pressing Enter?\n2. Preparation: Enter the SQL query interfac...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 9\n  - output_lines_count: 22\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT Ticker, CompanyName\n用户输入: FROM df\n用户输入: WHERE Industry = 'Technology'\n用户输入: \n用户输入: y\n程序输出: Welcome to the US Stock Quantitative Analy...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.1.2 Basic SQL Syntax Validation: Performs basic syntax validation on input SQL based on `sqlparse`.",
+      "description": "1. Precondition Check (User Path): From the main menu, can the user clearly enter the 'SQL Query' function interface by inputting '[2]' and pressing Enter?\n2. Execution (Unmatched Parentheses): Input ...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 10\n  - output_lines_count: 17\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELEKT * FROM df\n用户输入: \n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df WHERE (Industry = 'Technology'\n用户输入: \n程序输出: Welcome to the US Stock Quantitat...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.1.3 Query Interrupt Function: Supports users interrupting ongoing queries via Ctrl+C.",
+      "description": "1. Precondition Check (User Path): From the main menu, can the user clearly enter the 'SQL Query' function interface by inputting '[2]' and pressing Enter?\n2. Preparation: Execute a time-consuming que...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 27\n  - output_lines_count: 37\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT \n用户输入:     a.Ticker AS Ticker1,\n用户输入:     b.Ticker AS Ticker2,\n用户输入:     a.CompanyName AS Company1,\n用户输入:     b.CompanyName AS Compa...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.1.4a Query Failure Reason Prompt (Non-existent Field): Returns specific reason when a queried field does not exist.",
+      "description": "1. Precondition Check (User Path): From the main menu, can the user clearly enter the 'SQL Query' function interface by inputting '[2]' and pressing Enter?\n2. Preparation: Successfully configured a CS...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 8\n  - output_lines_count: 15\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT NonExistentField FROM df\n用户输入: \n用户输入: \n用户输入: 6\n程序输出: Welcome to the US Stock Quantitative Analysis Tool!\r\n\r\n========== US Stock Analy...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.1.4b Query Failure Reason Prompt (Data Source Not Configured): Returns specific reason when no data source is configured.",
+      "description": "1. Precondition Check (User Path): From the main menu, can the user clearly enter the 'SQL Query' function interface by inputting '[2]' and pressing Enter?\n2. Preparation: Ensure no CSV data source is...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 3\n  - output_lines_count: 8\n\n📝 程序输出日志:\n用户输入: 2\n用户输入: SELECT * FROM df\n用户输入: \n程序输出: Welcome to the US Stock Quantitative Analysis Tool!\r\n\r\n========== US Stock Analysis Tool ==========\r\n[1] Enter CSV File Path\r\n[2] SQL Query\r\n[3] Screen Stocks\r...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.1.5a History Query Recording and Display: Automatically saves the last 10 valid queries and supports viewing them.",
+      "description": "1. Precondition Check (User Path): From the main menu, can the user clearly enter the 'View History Queries' function interface by inputting '[5]' and pressing Enter?\n2. Preparation: In the SQL query ...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 17\n  - output_lines_count: 50\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT Ticker FROM df LIMIT 1\n用户输入: y\n用户输入: \n用户输入: 2\n用户输入: SELECT CompanyName FROM df LIMIT 1\n用户输入: y\n用户输入: \n用户输入: 2\n用户输入: SELECT Industry ...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.1.5b History Query Reuse: Supports reusing historical queries by inputting their number.",
+      "description": "1. Precondition Check (User Path): From the main menu, can the user clearly enter the 'View History Queries' function interface by inputting '[5]' and pressing Enter?\n2. Preparation: At least 2 differ...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 16\n  - output_lines_count: 41\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT Ticker FROM df LIMIT 1\n用户输入: y\n用户输入: \n用户输入: 2\n用户输入: SELECT CompanyName FROM df LIMIT 1\n用户输入: y\n用户输入: \n用户输入: 5\n用户输入: 2\n用户输入: y\n用户输入: ...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.2.1 Preset Market Cap Tier Screening: Based on query results, can screen according to preset market cap categories.",
+      "description": "1. Precondition Check (User Path): After a successful SQL query, can the user clearly enter the 'Screen Stocks' function interface by inputting '[3]' and pressing Enter from the main menu?\n2. Preparat...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\nPexpect执行错误: The command was not found or was not executable: PYTHONPATH=..\n错误类型: ExceptionPexpect\n可能原因:\n- 程序无法正常启动\n- 终端交互异常\n- 编码问题\n\n🔧 执行环境:\n  - command: PYTHONPATH=. pytest evaluation/tests/test_logic.py::test_market_cap_preset_filter\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 0\n  - output_lines_count: 0\n\n",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.2.2 Custom Market Cap Range Screening: Supports users inputting custom market cap lower and upper limits for screening.",
+      "description": "1. Precondition Check (User Path): After a successful SQL query, can the user clearly enter the 'Screen Stocks' function interface by inputting '[3]' and pressing Enter from the main menu, and find th...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 22\n  - output_lines_count: 40\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df\n用户输入: \n用户输入: y\n用户输入: \n用户输入: 3\n用户输入: 2\n用户输入: 8\n用户输入: >=\n用户输入: 5000000000\n用户输入: 8\n用户输入: <=\n用户输入: 8000000000\n用户输入: \n用户输入: AND...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.2.3a Combined Logic Screening (AND Logic): Supports adding other dimensions for 'AND' logic screening based on market cap screening.",
+      "description": "1. Precondition Check (User Path): In the screening function, can the user find the option to add extra screening conditions?\n2. Preparation: Execute an SQL query ensuring the result contains 'MarketC...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 20\n  - output_lines_count: 40\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df\n用户输入: \n用户输入: y\n用户输入: \n用户输入: 3\n用户输入: 2\n用户输入: 8\n用户输入: >=\n用户输入: 10000000000\n用户输入: 4\n用户输入: =\n用户输入: Technology\n用户输入: \n用户输入: AND...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.2.3b Combined Logic Screening (OR Logic): Supports 'OR' logic screening between different dimensions.",
+      "description": "1. Precondition Check (User Path): In the screening function, can the user find the option to add extra screening conditions and select 'OR' logic?\n2. Preparation: Execute an SQL query ensuring the re...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 20\n  - output_lines_count: 40\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df\n用户输入: \n用户输入: y\n用户输入: \n用户输入: 3\n用户输入: 2\n用户输入: 4\n用户输入: =\n用户输入: Technology\n用户输入: 4\n用户输入: =\n用户输入: Healthcare\n用户输入: \n用户输入: OR\n用户...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.2.4a Result Pagination Display: Screening results can be displayed in pages, 10 items per page.",
+      "description": "1. Precondition Check (User Path): For query/screening results exceeding 10 items, does the program automatically enable pagination and provide clear instructions for page navigation?\n2. Preparation: ...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 19\n  - output_lines_count: 46\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df\n用户输入: \n用户输入: y\n用户输入: \n用户输入: 3\n用户输入: 2\n用户输入: 8\n用户输入: >\n用户输入: 0\n用户输入: \n用户输入: AND\n用户输入: y\n用户输入: n\n用户输入: p\n用户输入: q\n程序输出: Welco...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.2.4b Result Sorting Function: Screening results support ascending or descending sorting by specified fields.",
+      "description": "1. Precondition Check (User Path): For query/screening results, does the program provide an option to sort by field?\n2. Preparation: Obtain a screening result containing the 'MarketCap' field.\n3. Exec...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 20\n  - output_lines_count: 47\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df\n用户输入: \n用户输入: y\n用户输入: \n用户输入: 3\n用户输入: 2\n用户输入: 8\n用户输入: >\n用户输入: 0\n用户输入: \n用户输入: AND\n用户输入: y\n用户输入: 8\n用户输入: desc\n用户输入: y\n用户输入: q\n...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.3.1 Target Metric Selection for Analysis: Allows user to select one numerical field from query results as the analysis target.",
+      "description": "1. Precondition Check (User Path): After a successful SQL query, can the user clearly enter the 'Analyze Metric Fluctuation' function interface by inputting '[4]' and pressing Enter from the main menu...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 16\n  - output_lines_count: 37\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df\n用户输入: \n用户输入: y\n用户输入: n\n用户输入: \n用户输入: 4\n用户输入: 2\n用户输入: 3\n用户输入: y\n用户输入: n\n用户输入: \n用户输入: 6\n程序输出: Welcome to the US Stock Quantit...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.3.2 Analysis Dimension Selection: Automatically extracts non-numerical fields as candidate dimensions and supports user selection.",
+      "description": "1. Precondition Check (User Path): After selecting the target metric, does the program automatically enter the analysis dimension selection interface?\n2. Preparation: Based on the previous step, a tar...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 16\n  - output_lines_count: 37\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df\n用户输入: \n用户输入: y\n用户输入: n\n用户输入: \n用户输入: 4\n用户输入: 1\n用户输入: 3,5\n用户输入: y\n用户输入: n\n用户输入: \n用户输入: 6\n程序输出: Welcome to the US Stock Quant...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.3.3 Variance Decomposition Contribution Calculation and Display: Correctly calculates and outputs the contribution of each dimension and interaction effects to metric fluctuation.",
+      "description": "1. Precondition Check (User Path): After selecting the metric and dimensions, can the program successfully execute the analysis and display results?\n2. Preparation: Select a metric (e.g., 'PE') and at...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\nPexpect执行错误: The command was not found or was not executable: PYTHONPATH=..\n错误类型: ExceptionPexpect\n可能原因:\n- 程序无法正常启动\n- 终端交互异常\n- 编码问题\n\n🔧 执行环境:\n  - command: PYTHONPATH=. pytest evaluation/tests/test_logic.py::test_variance_decomposition\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 0\n  - output_lines_count: 0\n\n",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.3.4 Core Dimension In-depth Analysis: Drills down into the dimension with the highest contribution, displaying sub-category statistical information.",
+      "description": "1. Precondition Check (User Path): After the variance decomposition results are displayed, does the program automatically trigger or provide an option for in-depth analysis?\n2. Preparation: Perform a ...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\nPexpect执行错误: The command was not found or was not executable: PYTHONPATH=..\n错误类型: ExceptionPexpect\n可能原因:\n- 程序无法正常启动\n- 终端交互异常\n- 编码问题\n\n🔧 执行环境:\n  - command: PYTHONPATH=. pytest evaluation/tests/test_logic.py::test_deep_dive_analysis\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 0\n  - output_lines_count: 0\n\n",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.4.1 Textual Table Display of Results: Analysis results support display via formatted text tables.",
+      "description": "1. Preparation: Perform a screening to obtain a result set with multiple rows and columns.\n2. Execution: Before result output, observe if the program asks the user 'Display results in table format? [y...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 8\n  - output_lines_count: 21\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT Ticker, CompanyName FROM df LIMIT 3\n用户输入: \n用户输入: y\n用户输入: n\n程序输出: Welcome to the US Stock Quantitative Analysis Tool!\r\n\r\n========== US...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.4.2a Report Saving Function: Supports saving analysis results as a TXT file.",
+      "description": "1. Precondition Check (User Path): After completing a full analysis process, does the program provide a 'Save Report' option?\n2. Preparation: Complete one 'Query-Screen-Analyze' process.\n3. Execution:...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 14\n  - output_lines_count: 38\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df WHERE Industry = 'Technology'\n用户输入: \n用户输入: y\n用户输入: \n用户输入: 4\n用户输入: 2\n用户输入: 2\n用户输入: y\n用户输入: y\n用户输入: evaluation/report.txt\n程序...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.4.2b Report Content Verification (Context): The report file must contain complete analysis context information.",
+      "description": "1. Preparation: The 'report.txt' file has been generated.\n2. Execution: Use `cat report.txt` or a text editor to view the file content.\n3. Assertion: Check if the file content contains the following t...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 14\n  - output_lines_count: 40\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df WHERE Industry = 'Technology'\n用户输入: \n用户输入: y\n用户输入: \n用户输入: 4\n用户输入: 2\n用户输入: 2\n用户输入: y\n用户输入: y\n用户输入: evaluation/report.txt\n程序...",
+      "status": "FAILED"
+    },
+    {
+      "metric": "2.4.2c Report Content Verification (Analysis Results): The report file must contain the complete analysis process and conclusions.",
+      "description": "1. Preparation: The 'report.txt' file has been generated.\n2. Execution: Use `cat report.txt` or a text editor to view the file content.\n3. Assertion: Check if the file content contains the following t...",
+      "score": 0,
+      "explanation": "❌ 程序执行失败\n\n🔥 错误信息:\n程序异常退出 - 退出码: None\n信号状态: None\n执行命令: python src/main.py\n工作目录: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n\n🔧 执行环境:\n  - command: python src/main.py\n  - working_directory: /Users/yuzhengxu/projects/PRDBench/PRDBench/2\n  - input_lines_count: 14\n  - output_lines_count: 37\n\n📝 程序输出日志:\n用户输入: 1\n用户输入: evaluation/sample_data.csv\n用户输入: \n用户输入: 2\n用户输入: SELECT * FROM df WHERE Industry = 'Technology'\n用户输入: \n用户输入: y\n用户输入: \n用户输入: 4\n用户输入: 2\n用户输入: 2\n用户输入: y\n用户输入: y\n用户输入: evaluation/report.txt\n程序...",
+      "status": "FAILED"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+name,category,unit,purchase_price,stock_quantity,processing_loss_rate
+rice,staple,kg,10,100,0
+steamed_bun,staple,kg,8,150,0
+chicken,protein,kg,20,50,10
+beef,protein,kg,40,20,15
+fish,protein,kg,30,30,10
+broccoli,vegetable,kg,15,30,5
+lettuce,vegetable,kg,8,80,5
+tomato,vegetable,kg,6,90,2
+pork,protein,kg,25,0,12

@@ -1,0 +1,12 @@
+[
+  "SELECT * FROM df WHERE Industry = 'Technology'",
+  "SELECT * FROM df WHERE Industry = 'Technology'",
+  "SELECT * FROM df WHERE Industry = 'Technology'",
+  "SELECT Ticker, CompanyName FROM df LIMIT 3",
+  "SELECT * FROM df",
+  "SELECT * FROM df",
+  "SELECT * FROM df",
+  "SELECT * FROM df",
+  "SELECT * FROM df",
+  "SELECT * FROM df"
+]

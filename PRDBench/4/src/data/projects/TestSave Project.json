@@ -1,0 +1,28 @@
+{
+    "name": "TestSave Project",
+    "city": "",
+    "area": "",
+    "business_circle_type": "",
+    "longitude": 0.0,
+    "latitude": 0.0,
+    "categories": {},
+    "avg_item_price": 30.0,
+    "daily_customers": 200,
+    "conversion_rate": 0.9,
+    "customer_flow_multiplier": {
+        "weekday": 1.0,
+        "weekend": 1.2,
+        "holiday": 1.5
+    },
+    "ingredient_cost_ratio": 0.3,
+    "packaging_cost_ratio": 0.05,
+    "monthly_rent": 10000.0,
+    "monthly_labor_cost": 20000.0,
+    "monthly_marketing_cost": 3000.0,
+    "monthly_other_cost": 1000.0,
+    "commission_rate": 0.15,
+    "platform_fee_rate": 0.05,
+    "initial_investment": 50000.0,
+    "category_influence_factor": 1.0,
+    "tiered_costs": []
+}

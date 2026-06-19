@@ -1,0 +1,22 @@
+Query SQL:
+SELECT * FROM df WHERE Industry = 'Technology'
+
+Analysis Metric: Market Value
+Analysis Dimensions: CompanyName
+
+--- Variance Decomposition Results ---
++----------------+------+-------------+---------------+-----+----------+------------------+
+| Source         |   df |      sum_sq |       mean_sq |   F |   PR(>F) |   contribution_% |
+|----------------+------+-------------+---------------+-----+----------+------------------|
+| C(CompanyName) |    2 | 5.26667e+23 |   2.63333e+23 |   0 |      nan |    100           |
+| Residual       |    0 | 5.96046e-08 | inf           | nan |      nan |      1.13173e-29 |
++----------------+------+-------------+---------------+-----+----------+------------------+
+
+--- Deep Analysis: C(CompanyName) ---
++-----------------+---------------------+--------------------+
+| CompanyName     |   Market Value_mean |   Market Value_std |
+|-----------------+---------------------+--------------------|
+| Alphabet Inc.   |             1.8e+12 |                  0 |
+| Apple Inc.      |             2.8e+12 |                  0 |
+| Microsoft Corp. |             2.5e+12 |                  0 |
++-----------------+---------------------+--------------------+

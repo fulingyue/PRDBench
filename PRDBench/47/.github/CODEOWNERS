@@ -1,0 +1,29 @@
+# CODEOWNERS — Project 47: Beijing Subway Fare Calculation System
+#
+# These owners are automatically requested for review when a PR
+# modifies files matching the patterns below.
+#
+# Format: <pattern>  <owner1> [<owner2> ...]
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repository
+*  @zhengxuyu
+
+# Fare calculation core — requires owner sign-off on any pricing change
+src/constants.py            @zhengxuyu
+src/models/fare_result.py   @zhengxuyu
+src/services/fare_service.py @zhengxuyu
+src/library/fare.py         @zhengxuyu
+
+# Graph and routing — Dijkstra implementation
+src/graph/                  @zhengxuyu
+
+# Test suite — cannot bypass review for test changes
+tests/                      @zhengxuyu
+
+# Protocols / contracts — breaking changes must be reviewed
+src/protocols/              @zhengxuyu
+
+# CI and project config
+pyproject.toml              @zhengxuyu
+.github/                    @zhengxuyu

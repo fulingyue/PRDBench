@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "combo_name": "single_meal 营养套餐 4",
+    "ingredients": [
+      {
+        "name": "steamed_bun",
+        "usage": 0.1
+      },
+      {
+        "name": "pork",
+        "usage": 0.08
+      },
+      {
+        "name": "lettuce",
+        "usage": 0.1
+      }
+    ],
+    "total_cost": 3.88,
+    "suggested_price": 28,
+    "discount": 1.0,
+    "discounted_price": 28.0,
+    "profit_margin": 621.6,
+    "nutrition_score": 5,
+    "created_at": "2026-03-23 22:46:08"
+  },
+  {
+    "id": 2,
+    "combo_name": "single_meal 营养套餐 1",
+    "ingredients": [
+      {
+        "name": "steamed_bun",
+        "usage": 0.1
+      },
+      {
+        "name": "chicken",
+        "usage": 0.08
+      },
+      {
+        "name": "tomato",
+        "usage": 0.1
+      }
+    ],
+    "total_cost": 3.17,
+    "suggested_price": 28,
+    "discount": 1.0,
+    "discounted_price": 28.0,
+    "profit_margin": 783.3,
+    "nutrition_score": 5,
+    "created_at": "2026-03-23 22:46:08"
+  },
+  {
+    "id": 3,
+    "combo_name": "single_meal 营养套餐 4",
+    "ingredients": [
+      {
+        "name": "steamed_bun",
+        "usage": 0.1
+      },
+      {
+        "name": "pork",
+        "usage": 0.08
+      },
+      {
+        "name": "lettuce",
+        "usage": 0.1
+      }
+    ],
+    "total_cost": 3.88,
+    "suggested_price": 28,
+    "discount": 1.0,
+    "discounted_price": 28.0,
+    "profit_margin": 621.6,
+    "nutrition_score": 5,
+    "created_at": "2026-03-23 23:22:21"
+  },
+  {
+    "id": 4,
+    "combo_name": "single_meal 营养套餐 1",
+    "ingredients": [
+      {
+        "name": "steamed_bun",
+        "usage": 0.1
+      },
+      {
+        "name": "chicken",
+        "usage": 0.08
+      },
+      {
+        "name": "tomato",
+        "usage": 0.1
+      }
+    ],
+    "total_cost": 3.17,
+    "suggested_price": 28,
+    "discount": 1.0,
+    "discounted_price": 28.0,
+    "profit_margin": 783.3,
+    "nutrition_score": 5,
+    "created_at": "2026-03-23 23:22:21"
+  },
+  {
+    "id": 5,
+    "combo_name": "single_meal 营养套餐 4",
+    "ingredients": [
+      {
+        "name": "steamed_bun",
+        "usage": 0.1
+      },
+      {
+        "name": "pork",
+        "usage": 0.08
+      },
+      {
+        "name": "lettuce",
+        "usage": 0.1
+      }
+    ],
+    "total_cost": 3.88,
+    "suggested_price": 28,
+    "discount": 1.0,
+    "discounted_price": 28.0,
+    "profit_margin": 621.6,
+    "nutrition_score": 5,
+    "created_at": "2026-03-24 10:41:47"
+  },
+  {
+    "id": 6,
+    "combo_name": "single_meal 营养套餐 1",
+    "ingredients": [
+      {
+        "name": "steamed_bun",
+        "usage": 0.1
+      },
+      {
+        "name": "chicken",
+        "usage": 0.08
+      },
+      {
+        "name": "tomato",
+        "usage": 0.1
+      }
+    ],
+    "total_cost": 3.17,
+    "suggested_price": 28,
+    "discount": 1.0,
+    "discounted_price": 28.0,
+    "profit_margin": 783.3,
+    "nutrition_score": 5,
+    "created_at": "2026-03-24 10:41:47"
+  }
+]

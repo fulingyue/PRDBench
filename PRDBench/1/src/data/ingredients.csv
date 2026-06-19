@@ -1,0 +1,55 @@
+dish_id,ingredient_name,quantity,unit,cost_per_unit,allergen
+1,Beef,0.5,kg,80.0,
+1,Chili,0.05,kg,15.0,
+1,Spices,0.02,kg,50.0,
+2,Tofu,0.4,kg,8.0,Soybean
+2,Minced Beef,0.05,kg,80.0,
+2,Doubanjiang,0.03,kg,25.0,Soybean
+1,Beef,0.5,kg,80.0,
+3,Egg,0.2,kg,12.0,Egg
+3,Peanut Oil,0.05,L,40.0,Peanut
+1,Beef,0.5,kg,80.0,
+1,Chili,0.05,kg,15.0,
+1,Spices,0.02,kg,50.0,
+2,Tofu,0.4,kg,8.0,Soybean
+2,Minced Beef,0.05,kg,80.0,
+2,Doubanjiang,0.03,kg,25.0,Soybean
+1,Beef,0.5,kg,80.0,
+3,Egg,0.2,kg,12.0,Egg
+3,Peanut Oil,0.05,L,40.0,Peanut
+1,Beef,0.5,kg,80.0,
+1,Chili,0.05,kg,15.0,
+1,Spices,0.02,kg,50.0,
+2,Tofu,0.4,kg,8.0,Soybean
+2,Minced Beef,0.05,kg,80.0,
+2,Doubanjiang,0.03,kg,25.0,Soybean
+1,Beef,0.5,kg,80.0,
+3,Egg,0.2,kg,12.0,Egg
+3,Peanut Oil,0.05,L,40.0,Peanut
+1,Beef,0.5,kg,80.0,
+1,Chili,0.05,kg,15.0,
+1,Spices,0.02,kg,50.0,
+2,Tofu,0.4,kg,8.0,Soybean
+2,Minced Beef,0.05,kg,80.0,
+2,Doubanjiang,0.03,kg,25.0,Soybean
+1,Beef,0.5,kg,80.0,
+3,Egg,0.2,kg,12.0,Egg
+3,Peanut Oil,0.05,L,40.0,Peanut
+1,Beef,0.5,kg,80.0,
+1,Chili,0.05,kg,15.0,
+1,Spices,0.02,kg,50.0,
+2,Tofu,0.4,kg,8.0,Soybean
+2,Minced Beef,0.05,kg,80.0,
+2,Doubanjiang,0.03,kg,25.0,Soybean
+1,Beef,0.5,kg,80.0,
+3,Egg,0.2,kg,12.0,Egg
+3,Peanut Oil,0.05,L,40.0,Peanut
+1,Beef,0.5,kg,80.0,
+1,Chili,0.05,kg,15.0,
+1,Spices,0.02,kg,50.0,
+2,Tofu,0.4,kg,8.0,Soybean
+2,Minced Beef,0.05,kg,80.0,
+2,Doubanjiang,0.03,kg,25.0,Soybean
+1,Beef,0.5,kg,80.0,
+3,Egg,0.2,kg,12.0,Egg
+3,Peanut Oil,0.05,L,40.0,Peanut

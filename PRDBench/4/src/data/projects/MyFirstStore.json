@@ -1,0 +1,32 @@
+{
+    "name": "MyFirstStore",
+    "city": "Shanghai",
+    "area": "Pudong New Area",
+    "business_circle_type": "Core Business District",
+    "longitude": 121.52,
+    "latitude": 31.22,
+    "categories": {
+        "Staples": 0.5,
+        "Snacks": 0.3,
+        "Beverages": 0.2
+    },
+    "avg_item_price": 35.0,
+    "daily_customers": 150,
+    "conversion_rate": 0.8,
+    "customer_flow_multiplier": {
+        "weekday": 1.0,
+        "weekend": 1.2,
+        "holiday": 1.5
+    },
+    "ingredient_cost_ratio": 0.3,
+    "packaging_cost_ratio": 0.05,
+    "monthly_rent": 20000.0,
+    "monthly_labor_cost": 30000.0,
+    "monthly_marketing_cost": 5000.0,
+    "monthly_other_cost": 1000.0,
+    "commission_rate": 0.15,
+    "platform_fee_rate": 0.05,
+    "initial_investment": 100000.0,
+    "category_influence_factor": 1.0,
+    "tiered_costs": []
+}

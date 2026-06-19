@@ -1,0 +1,22 @@
+{
+  "basic_info": {
+    "product_name": "Test Product",
+    "target_users": "Young User"
+  },
+  "image_spec": {
+    "source_type": "local_path",
+    "allowed_formats": [
+      "jpg",
+      "jpeg",
+      "png",
+      "webp"
+    ]
+  },
+  "feature_requirements": {
+    "style_keywords": [
+      "Minimalism",
+      "Modern"
+    ],
+    "color_emotion": "Cool Tone-Professional"
+  }
+}

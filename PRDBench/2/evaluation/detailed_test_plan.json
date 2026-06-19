@@ -174,7 +174,7 @@
     "expected_output": "The Pytest test should pass, indicating all returned stocks have a market cap greater than or equal to 10 billion.",
     "testcases": [
       {
-        "test_command": "pytest evaluation/tests/test_logic.py::test_market_cap_preset_filter",
+        "test_command": "PYTHONPATH=. pytest evaluation/tests/test_logic.py::test_market_cap_preset_filter",
         "test_input": null
       }
     ]
@@ -307,7 +307,7 @@
     "expected_output": "The Pytest test should pass, indicating the structure and content of the variance decomposition results meet expectations.",
     "testcases": [
       {
-        "test_command": "pytest evaluation/tests/test_logic.py::test_variance_decomposition",
+        "test_command": "PYTHONPATH=. pytest evaluation/tests/test_logic.py::test_variance_decomposition",
         "test_input": null
       }
     ]
@@ -321,7 +321,7 @@
     "expected_output": "The Pytest test should pass, indicating the mean and standard deviation calculated by the deep dive analysis are correct.",
     "testcases": [
       {
-        "test_command": "pytest evaluation/tests/test_logic.py::test_deep_dive_analysis",
+        "test_command": "PYTHONPATH=. pytest evaluation/tests/test_logic.py::test_deep_dive_analysis",
         "test_input": null
       }
     ]

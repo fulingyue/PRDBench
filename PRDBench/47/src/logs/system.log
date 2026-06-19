@@ -1,0 +1,9 @@
+2026-03-25 15:06:24,704 [INFO] [2026-03-25 15:06:24] [Userlogin] user=REGTEST001 | New user registered: RegTestUser
+2026-03-25 15:06:49,136 [INFO] [2026-03-25 15:06:49] [DataModify] user=admin | Book added: TEST-ADD-001
+2026-03-25 15:06:49,165 [INFO] [2026-03-25 15:06:49] [DataModify] user=admin | Book added: DELETE-TEST-001
+2026-03-25 15:06:49,166 [INFO] [2026-03-25 15:06:49] [DataModify] user=admin | Book deleted: DELETE-TEST-001
+2026-03-25 15:06:49,931 [INFO] [2026-03-25 15:06:49] [Userlogin] user=TEST001 | User login test
+2026-03-25 15:06:49,931 [INFO] [2026-03-25 15:06:49] [BookBorrowing] user=system | Borrow operation test
+2026-03-25 15:06:49,931 [ERROR] [2026-03-25 15:06:49] [DataModify] user=system | Modify operation test error
+2026-03-25 15:07:02,169 [INFO] [2026-03-25 15:07:02] [SystemStart] user=system | Library Management System started
+2026-03-25 15:07:02,170 [INFO] [2026-03-25 15:07:02] [SystemStop] user=system | System exited normally
